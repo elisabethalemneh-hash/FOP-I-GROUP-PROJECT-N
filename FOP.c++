@@ -19,4 +19,5 @@ int main() {
     string* name = new string[maxSize];
     string* id = new string[maxSize];
     string* sn = new string[maxSize];
-  retirn 0;}
+
+  return 0;}
