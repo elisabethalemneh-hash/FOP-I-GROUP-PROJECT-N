@@ -41,4 +41,33 @@ int main() {
                     cout << "enter id from card: ";
                     cin >> cardId;*/
 
-  return 0;}
+                    //Kedir Lemecha
+                    // view
+        else if (choice == 3) {
+            cout << "\n--- record list ---\n";
+            for (int i = 0; i < count; i++) {
+                cout << i + 1 << ". " << name[i] << " | " << id[i] << " | " << sn[i] << endl;
+            }
+        }
+
+    } while (choice != 4);
+
+    cout << "system closed\n";
+
+    // free memory
+    delete[] name;
+    delete[] id;
+    delete[] sn;
+
+    // note
+    cout << "\nNOTE:\n";
+    cout << "- this program use temporary memory\n";
+    cout << "- data lost when program closed\n";
+    cout << "- work only on one computer (one gate)\n";
+    cout << "- for many gate and save data forever\n";
+    cout << "  need database and network system\n";
+
+
+
+  return 0;
+}
